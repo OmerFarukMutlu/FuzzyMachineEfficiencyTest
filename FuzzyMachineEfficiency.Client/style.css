@@ -1,0 +1,114 @@
+/* Temel Ayarlar */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 { color: #2c3e50; }
+header p { color: #7f8c8d; }
+
+/* Kart Tasarımları */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+/* Form Elemanları */
+.form-group { margin-bottom: 15px; }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Taşmaları engeller */
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Yan yana 3 kutu */
+    gap: 15px;
+}
+
+/* Mobilde alt alta düşsün diye ufak ayar */
+@media (max-width: 600px) {
+    .metrics-grid { grid-template-columns: 1fr; }
+}
+
+/* Buton */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover { background-color: #2980b9; }
+
+/* Sonuç Alanı */
+.result-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-circle {
+    width: 80px;
+    height: 80px;
+    background: #ecf0f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    border: 5px solid #bdc3c7;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+    background: #95a5a6;
+    margin-top: 5px;
+}
